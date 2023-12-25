@@ -7,7 +7,6 @@ import { remove } from '../redux/Slices/CartSlice';
 function CartItem({item}) {
 
     const dispatch=useDispatch();
-    const {cart}=useSelector((state)=>state);
 
     function removeItem()
     {
