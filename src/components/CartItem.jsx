@@ -1,6 +1,6 @@
 import React from 'react'
 import { MdDeleteSweep } from "react-icons/md";
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import toast from 'react-hot-toast';
 import { remove } from '../redux/Slices/CartSlice';
 
