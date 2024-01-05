@@ -9,7 +9,7 @@ function NavBar() {
     <div className='bg-slate-900'>
       <nav className='flex justify-between items-center max-w-6xl h-20 mx-auto'>
         <NavLink to={'/'}>
-          <img className='ml-5 h-14' src="./logo.png" alt="logo"/>
+          <img className='ml-5 h-14' src="./logo.png" alt="logo" loading='lazy'/>
         </NavLink>
 
         <section className='flex text-slate-100 items-center space-x-6 font-medium mr-5'>

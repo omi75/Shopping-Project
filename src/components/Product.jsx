@@ -24,7 +24,7 @@ function Product({post}) {
     <div className='flex flex-col justify-center items-center hover:scale-110 transition-all duration-300 ease-in shadow-xl gap-3 p-4 mt-10 ml-5 rounded-xl border'>
         <h2 className='text-green-700 font-semibold text-lg text-left truncate w-40 mt-1'>{post.title.substr(0,17)}...</h2>
         <span className='w-40 text-gray-400 font-normal text-[10px] text-left'>{post.description.split(" ").splice(0,10).join(" ")+"..."}</span>
-        <img src={post.image} alt="cart data" className='h-[180px]'/>
+        <img src={post.image} alt="cart data" className='h-[180px]' loading='lazy'/>
         <section className='flex justify-between w-full items-center'>
             <span className='text-green-600 font-semibold'>$ {post.price}</span>
             { cart.some((p)=>p.id===post.id) 

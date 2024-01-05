@@ -17,7 +17,7 @@ function CartItem({item}) {
     <div className='p-4 border-b-2 last:border-none border-slate-700'>
        <div className="flex justify-between py-3.5 px-2.5 gap-14 flex-col md:flex-row">
           <section className='md:w-[30%] w-full flex justify-center items-center'>
-              <img src={item.image} className="w-[40%] md:w-[50%] lg:w-full" alt="item" />
+              <img src={item.image} className="w-[40%] md:w-[50%] lg:w-full" alt="item" loading='lazy'/>
           </section>
 
           <section className='md:w-[70%] w-full flex flex-col gap-5'>
